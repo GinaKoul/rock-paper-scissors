@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js"></script>
+</head>
+<body>
+
+    <div id="start">
+        <span>L</span><span>e</span><span>t</span><span>'</span><span>s</span>
+        <span>p</span><span>l</span><span>a</span><span>y</span><span>!</span>
+    </div>
+
+    <div id="game">
+
+        <h1 style="text-align: center;">ROCK PAPER SCISSORS</h1>
+
+        <div id="score">
+            <p> 0 - 0 </p>
+        </div>
+
+        <h2>CHOOSE YOUR MOVE</h2>
+
+        <div class="choose">
+        
+            <button onclick='round("rock")'><img class="rock" src="./icons/rock.png" placeholder="rock"></button>
+            <button onclick='round("paper")'><img class="paper" src="./icons/paper.png" placeholder="paper"></button>
+            <button onclick='round("scissors")'><img class="scissors" src="./icons/scissors.png" placeholder="scissors"></button>
+
+        </div>
+
+        <div id="message">
+            <p></p>
+        </div>
+
+        <div class="images">
+
+            <div class="you">
+
+                <h3>YOU</h3>
+
+                <div id="img1">
+                    <img class="questionmark" src="./icons/question-mark.png" placeholder="question mark">
+                </div>
+
+            </div>
+
+            <div class="opponent">
+
+                <h3>OPPONENT</h3>
+
+                <div id="img2">
+                    <img class="questionmark" src="./icons/question-mark.png" placeholder="question mark">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="winner" style="display: none">
+        <p></p>
+    </div>
+
+    <footer id="footer">
+
+        <div class="credits">
+
+            <h4>Credits</h4>
+
+            <a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/stack" title="stack icons">Stack icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Freepik - Flaticon</a>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,197 @@
+body{
+    background: linear-gradient(to bottom right, #8e0e00, #1f1c18);
+    margin: 30px 0 0 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#start{
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+span{
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+    
+}
+
+span:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+span:nth-child(2){
+    animation-delay: 1s;
+}
+
+span:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+span:nth-child(4){
+    animation-delay: 2s;
+}
+
+span:nth-child(5){
+    animation-delay: 2.5s;
+}
+
+span:nth-child(6){
+    animation-delay: 3s;
+}
+
+span:nth-child(7){
+    animation-delay: 3.5s;
+}
+
+span:nth-child(8){
+    animation-delay: 4s;
+}
+
+span:nth-child(9){
+    animation-delay: 4.5s;
+}
+
+span:nth-child(10){
+    animation-delay: 5s;
+}
+
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgb(0, 0, 0.30);
+        transform: translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+}
+
+#game{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rock, .paper, .scissors{
+    width: 60%;
+    height: auto;
+}
+
+.choose > button{
+    width: 100px;
+    height: 100px;
+    background:  #8e0e00;
+    border-radius: 5px;
+    border: 0;
+}
+
+.choose{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.images > .you, .opponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images> .you > #img1, .opponent > #img2{
+    width: 250px;
+    height: 250px;
+    background-color:  #8e0e00;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 10px #1f1c18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionmark{
+    width: 60%;
+    height: auto;
+}
+
+#winner{
+    margin-bottom: auto;
+}
+
+body > #footer{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: flex-start;
+    background: #8e0e00;
+}
+
+#footer > .credits{
+    display:flex;
+    flex-direction: column;
+    padding:  5px 20px;
+}
+
+#footer > .credits > a{
+    color:#1f1c18;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+}
+
+body > #winner{
+    display:flex;
+    font-size: xx-large;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#winner > button {
+    background: #8e0e00;
+    width: 200px;
+    height: 100px;
+    font-size: xx-large;
+    border-radius: 5px;
+    border:10px #1f1c18;
+}
+
+@media (orientation: portrait) {
+    .images> .you > #img1, .opponent > #img2{
+        width: 140px;
+        height: 140px;
+    }
+}
+
