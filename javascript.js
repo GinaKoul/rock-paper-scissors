@@ -117,7 +117,7 @@ function round(pChoice){
             document.getElementById("img2").innerHTML= `<img class='questionmark' src='./icons/${playerSelection}.png' placeholder='question mark'>`;
 
             //Return message Draw! Play again.
-            document.getElementById("message").innerHTML= "<p>Drow! Play again.</p>";
+            document.getElementById("message").innerHTML= "<p>Draw! Play again.</p>";
 
     }else{
 
