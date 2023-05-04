@@ -1,5 +1,7 @@
 body{
-    background: linear-gradient(to bottom right, #8e0e00, #1f1c18);
+    /*background: linear-gradient(to bottom right, #8e0e00, #1f1c18);*/
+    background: rgb(40,85,101);
+    background: linear-gradient(90deg, rgba(40,85,101,1) 0%, rgba(121,208,247,1) 50%, rgba(40,85,101,1) 100%);
     margin: 30px 0 0 0;
     padding: 0;
     border: 0;
@@ -80,6 +82,10 @@ span:nth-child(10){
     }
 }
 
+button:hover, #img1, #img2{
+    box-shadow: 0 0 50px rgba(40,85,101,1);
+}
+
 #game{
     margin-top: 0;
     display: flex;
@@ -96,7 +102,8 @@ span:nth-child(10){
 .choose > button{
     width: 100px;
     height: 100px;
-    background:  #8e0e00;
+    /*background:  #8e0e00;*/
+    background: rgba(121,208,247,1);
     border-radius: 5px;
     border: 0;
 }
@@ -126,7 +133,8 @@ span:nth-child(10){
 .images> .you > #img1, .opponent > #img2{
     width: 250px;
     height: 250px;
-    background-color:  #8e0e00;
+    /*background-color:  #8e0e00;*/
+    background:rgba(121,208,247,1);
     border-radius: 5px;
     border-radius: 5px;
     border: 10px #1f1c18;
@@ -151,7 +159,8 @@ body > #footer{
     border: 0;
     display: flex;
     justify-content: flex-start;
-    background: #8e0e00;
+    /*background: #8e0e00;*/
+    background: rgba(40,85,101,1);
 }
 
 #footer > .credits{
@@ -181,7 +190,8 @@ body > #winner{
 }
 
 #winner > button {
-    background: #8e0e00;
+    /*background: #8e0e00;*/
+    background: rgba(121,208,247,1);
     width: 200px;
     height: 100px;
     font-size: xx-large;
@@ -196,11 +206,11 @@ body > #winner{
     }
 
     body{
-        gap: 10px;
+        gap: 5px;
     }
 
     #start{
-        margin-top: 15px;
+        margin-top: 5px;
         padding-top: 0;
         margin-bottom: 5px;
     }
