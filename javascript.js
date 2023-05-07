@@ -7,6 +7,18 @@ let computer = 0;
 //Create a global intiger variable named player with default value 0.
 let player = 0;
 
+//Toggle classes to show and hide the Credits and change the arrow direction
+const cButton = document.querySelector(".cButton");
+
+cButton.addEventListener("click",credits);
+
+function credits(){
+    const credit = document.querySelector(".end");
+    credit.classList.toggle("credits");
+    const arrow = document.querySelector(".arrow");
+    arrow.classList.toggle("down");
+    arrow.classList.toggle("up");
+}
 
 /*window.onload = start();
 
@@ -242,12 +254,12 @@ function displayWinner(player,computer){
         //If player value equals 5
         if ( player === 5 ){
             //Return message END OF GAME. YOU WIN.
-            document.getElementById("winner").innerHTML= "<p>END OF GAME</p> <p>YOU WIN</p> <button onclick='restartGame()'>Restart Game</button>";
+            document.getElementById("winner").innerHTML= "<p>END OF GAME</p> <p>YOU WON</p> <button onclick='restartGame()'>Restart Game</button>";
 
         //Else if computer value equals 5
         }else if ( computer === 5 ){
             //Return message END OF GAME. YOU LOSE.
-            document.getElementById("winner").innerHTML= "<p>END OF GAME</p> <p>YOU LOSE</p> <button onclick='restartGame()'>Restart Game</button>";
+            document.getElementById("winner").innerHTML= "<p>END OF GAME</p> <p>YOU LOST</p> <button onclick='restartGame()'>Restart Game</button>";
         }
 
     }
