@@ -275,6 +275,7 @@ body > #winner{
 
     body{
         gap: 5px;
+        min-height: 100vh;
     }
 
     #start{
